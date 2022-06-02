@@ -2,8 +2,8 @@
 
 let redirect_uri = "http://127.0.0.1:5500/index.html";
 
-var client_id = "e421578040e54847bb3f0db513997561";
-var client_secret = "95bc05abd01a4f2ab9fed528f7038073";
+var client_id = "";
+var client_secret = "";
 
 let access_token = null;
 let refresh_token = null;
@@ -17,7 +17,7 @@ const PERSONALIZATION = "https://api.spotify.com/v1/me/top/tracks";
 function onPageLoad() {
     //client_id = localStorage.getItem("client_id");
     //client_secret = localStorage.getItem("client_secret");
-    //requestAuthorization();
+
     if ( window.location.search.length > 0 ){
         handleRedirect();
     }
