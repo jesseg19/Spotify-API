@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify API Test</title>
+    <script src="app.js"></script>
+</head>
+
+<body onload="onPageLoad()">
+
+    <div id="tokenSection">
+        <label for="clientId" class="form-label">Client ID</label>
+        <input type="text" class="form-control" id="clientId" placeholder="">
+        <label for="clientSecret" class="form-label">Client Secret</label>
+        <input type="text" class="form-control" id="clientSecret" placeholder="">
+        <input type="button" onclick="requestAuthorization()" value="Request Authorization">
+    </div>
+
+    <div class="mb-3">
+        <label for="devices" class="form-label">Devices</label>
+        <select id="devices" class="form-control">
+        </select>
+        <input class="btn btn-primary btn-sm mt-3" type="button" onclick="refreshDevices()" value="Refresh Devices">
+        <input type="button" class="btn btn-dark btn-sm  mt-3" onclick="transfer()" value="Transfer">
+    </div>
+
+    <div class="personalization">
+
+    </div>
+
+</body>
+
+</html>
